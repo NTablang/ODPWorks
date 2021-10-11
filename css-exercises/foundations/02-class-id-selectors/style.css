@@ -1,0 +1,16 @@
+.odd {
+    background-color: thistle;
+    font-family: 'Verdana', 'sans-serif';
+}
+.oddBigger{
+    font-size: 24px;
+}
+#blueID {
+    color: blue;
+    font-size: 36px;
+}
+#greenID {
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}

@@ -5,8 +5,13 @@ There are three elements for you to add styles to, each of which uses a differen
 
 The properties you need to add to each element are:
 
+external css method
 * `div`: a red background, white text, a font size of 32px, center aligned, and bold
+
+internal css method
 * `p`: a green background, white text, and a font size of 18px
+
+inline css method 
 * `button`: an orange background and a font size of 18px
 
 ## Desired Outcome
