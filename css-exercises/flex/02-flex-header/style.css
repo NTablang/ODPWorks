@@ -23,7 +23,6 @@ ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
   display: flex;
-  border: green solid 3px;
   
   margin: 0px;
   padding: 0px;
