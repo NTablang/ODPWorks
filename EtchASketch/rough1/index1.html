@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Container1</title>
+    <script src="script1.js" defer></script>
+    <link rel="stylesheet" href="styles1.css">
+
+    <!-- minify -->
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+    <!-- latest -->
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <!-- core style only -->
+    <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <h1>
+            Etch-A-Sketch
+        </h1>
+    </div>
+
+    <div class="main">
+        <div class="nes-container is-rounded left-pane">
+            <p class="nes-octocat animate"></p>
+            <input id="picasso" type="color" class="nes-btn is-warning">Picasso Mode</button>
+            <button id="sickoMode" type="button" class="nes-btn is-warning">Sicko Mode</button>
+            <button id="eraser" type="button" class="nes-btn is-warning">Eraser</button>
+
+            <p class="ratio-indicator"></p>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="30" class="slider " id="myRange">
+            </div>
+            <p>
+                Hi! Thank you for visiting my humble page! 
+            </p>
+            <button id="toggle" type="button" class="nes-btn is-warning">Landscape Mode</button>
+            <button id="clear" type="button" class="nes-btn is-error">Clear</button>
+        </div>
+        <div id="sketchpad" class="nes-container is-rounded grid-container"></div>
+    </div>
+
+    <div class="info">
+        <a href="https://github.com/NTablang">Made by Nathan Tablang with The Odin Project</a>
+    </div>
+</body>
+</html>

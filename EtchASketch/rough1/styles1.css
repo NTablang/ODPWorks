@@ -1,0 +1,133 @@
+body {
+    padding: 20px !important;
+    background-color: beige !important;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.title{
+    margin-top: 20px;
+}
+.main {
+    display: flex; 
+    flex-direction: row; /*CHANGE THIS FROM COL BACK TO ROW*/
+    gap: 30px;
+}
+.grid-container {
+    display: grid;
+    height: 650px;
+    width: 650px;
+
+}
+.cell {
+    /*border: 0.1px solid #C4B28F;*/
+    width: auto;
+    height: auto;
+    background-color: wheat;
+}
+
+
+.nes-container {
+    padding: 3px !important;
+}
+.left-pane {
+    /*border: blue 2px solid !important;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20vw;
+    gap: 15px;
+    padding: 10px;
+}
+.grid-transformed {
+    animation-duration: 1s;
+    animation-name: wider;
+    animation-timing-function: linear;
+}
+@keyframes wider {
+    100% {
+        width: 900px;
+    }
+}
+
+.grid-transformed-narrow {
+    animation-duration: 1s;
+    animation-name: narrow;
+    animation-timing-function: linear;
+}
+@keyframes narrow {
+    100% {
+        width: 650px;
+    }
+}
+
+.wider-grid-container {
+    width: 900px;
+    height: 650px;
+    display: grid;
+   /* height: auto;*/
+    /*display: grid;
+    margin: 1px;*/
+}
+
+
+
+
+/* edit these! */
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+  
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+  
+  /* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+  
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    cursor: pointer; /* Cursor on hover */
+    background: #e59500;
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    cursor: pointer; /* Cursor on hover */
+    background: #e59500;
+}
+  
+.info {
+      position: absolute;
+      top: 96vh;
+      left: 60vw;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+}
+
+a {
+    color: black !important;
+}
