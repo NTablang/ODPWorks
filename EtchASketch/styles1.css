@@ -1,8 +1,6 @@
 body {
     padding: 20px !important;
     background-color: beige !important;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +12,7 @@ body {
 }
 .main {
     display: flex; 
-    flex-direction: row; /*CHANGE THIS FROM COL BACK TO ROW*/
+    flex-direction: row; 
     gap: 30px;
 }
 .grid-container {
@@ -23,19 +21,28 @@ body {
     width: 650px;
 
 }
+.info {
+    position: absolute;
+    top: 96vh;
+    left: 60vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+a {
+  color: black !important;
+}
 .cell {
-    /*border: 0.1px solid #C4B28F;*/
     width: auto;
     height: auto;
     background-color: wheat;
 }
 
-
 .nes-container {
     padding: 3px !important;
 }
 .left-pane {
-    /*border: blue 2px solid !important;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,6 +52,7 @@ body {
     gap: 15px;
     padding: 10px;
 }
+
 .grid-transformed {
     animation-duration: 1s;
     animation-name: wider;
@@ -71,15 +79,9 @@ body {
     width: 900px;
     height: 650px;
     display: grid;
-   /* height: auto;*/
-    /*display: grid;
-    margin: 1px;*/
 }
 
-
-
-
-/* edit these! */
+/* BELOW CSS STYLES ARE TAKEN DIRECTLY FROM W3STYLES!*/
 .slidecontainer {
     width: 100%; /* Width of the outside container */
 }
@@ -97,7 +99,7 @@ body {
     transition: opacity .2s;
 }
   
-  /* Mouse-over effects */
+/* Mouse-over effects */
 .slider:hover {
     opacity: 1; /* Fully shown on mouse-over */
 }
@@ -119,15 +121,3 @@ body {
     background: #e59500;
 }
   
-.info {
-      position: absolute;
-      top: 96vh;
-      left: 60vw;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-size: 15px;
-}
-
-a {
-    color: black !important;
-}
